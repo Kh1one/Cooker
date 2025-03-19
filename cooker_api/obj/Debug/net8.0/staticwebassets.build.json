@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "U1fzK0qu+lnH9AMuIenb2tgReKu9JtL1g4TMIMkEgks=",
+  "Source": "cooker_api",
+  "BasePath": "_content/cooker_api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,299 @@
+[
+  {
+    "ContainingType": "cooker_api.Controllers.DeleteCommentController",
+    "Method": "DeleteComment",
+    "RelativePath": "api/v1/delete-comment/{CommentId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CommentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "cooker_api.Controllers.DeleteFavouriteController",
+    "Method": "DeleteFavourite",
+    "RelativePath": "api/v1/delete-favourite",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "cooker_api.Models.FavouriteModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "cooker_api.Controllers.DeletePostController",
+    "Method": "DeletePost",
+    "RelativePath": "api/v1/delete-post/{PostId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PostId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "cooker_api.Controllers.GetAllPostsController",
+    "Method": "GetAllPosts",
+    "RelativePath": "api/v1/get-all-posts/{Page}/{PageSize}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "cooker_api.Controllers.GetCommentByPostIdController",
+    "Method": "GetCommentByPostId",
+    "RelativePath": "api/v1/get-comment-by-post-id/{PostId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PostId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "cooker_api.Controllers.GetFavouriteByUserIdController",
+    "Method": "GetFavouriteByUserId",
+    "RelativePath": "api/v1/get-favourite-by-user-id/{UserId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "cooker_api.Controllers.GetPostByUserIdController",
+    "Method": "GetPostByUserId",
+    "RelativePath": "api/v1/get-post-by-user-id/{UserId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "cooker_api.Controllers.GetUserByUserIdController",
+    "Method": "GetUserByUserId",
+    "RelativePath": "api/v1/get-user-by-user-id/{UserId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "cooker_api.Controllers.InsertCommentController",
+    "Method": "InsertComment",
+    "RelativePath": "api/v1/insert-comment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "cooker_api.Models.CommentModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "cooker_api.Controllers.InsertFavouriteController",
+    "Method": "InsertFavourite",
+    "RelativePath": "api/v1/insert-favourite",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "cooker_api.Models.FavouriteModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "cooker_api.Controllers.InsertPostController",
+    "Method": "InsertNewPost",
+    "RelativePath": "api/v1/insert-post",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "cooker_api.Models.PostModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "cooker_api.Controllers.InsertUserDataController",
+    "Method": "InsertNewUser",
+    "RelativePath": "api/v1/insert-user-data",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "cooker_api.Models.UserModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "cooker_api.Controllers.ModifyCommentLikesController",
+    "Method": "ModifyComment",
+    "RelativePath": "api/v1/modify-likes/{CommentId}/{Amount}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CommentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Amount",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "cooker_api.Controllers.SearchPostController",
+    "Method": "SearchPost",
+    "RelativePath": "api/v1/search-posts/{Page}/{PageSize}/{SearchTerm}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "SearchTerm",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "cooker_api.Controllers.UpdateCommentController",
+    "Method": "UpdateComment",
+    "RelativePath": "api/v1/update-comment/{CommentId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CommentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Content",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "cooker_api.Controllers.UpdatePostController",
+    "Method": "UpdatePost",
+    "RelativePath": "api/v1/update-post",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "cooker_api.Models.PostModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "cooker_api.Controllers.UpdateProfileController",
+    "Method": "UpdateProfile",
+    "RelativePath": "api/v1/update-profile",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "cooker_api.Models.UserModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

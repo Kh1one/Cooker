@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\cooker_api.props" />
+</Project>

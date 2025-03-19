@@ -1,0 +1,14 @@
+C:\Users\Kezia123\Documents\aakodingan\visual studio\cooker_api.entities\bin\Debug\net8.0\cooker_api.entities.deps.json
+C:\Users\Kezia123\Documents\aakodingan\visual studio\cooker_api.entities\bin\Debug\net8.0\cooker_api.entities.dll
+C:\Users\Kezia123\Documents\aakodingan\visual studio\cooker_api.entities\bin\Debug\net8.0\cooker_api.entities.pdb
+C:\Users\Kezia123\Documents\aakodingan\visual studio\cooker_api.entities\obj\Debug\net8.0\cooker_api.entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kezia123\Documents\aakodingan\visual studio\cooker_api.entities\obj\Debug\net8.0\cooker_api.entities.AssemblyInfoInputs.cache
+C:\Users\Kezia123\Documents\aakodingan\visual studio\cooker_api.entities\obj\Debug\net8.0\cooker_api.entities.AssemblyInfo.cs
+C:\Users\Kezia123\Documents\aakodingan\visual studio\cooker_api.entities\obj\Debug\net8.0\cooker_api.entities.csproj.CoreCompileInputs.cache
+C:\Users\Kezia123\Documents\aakodingan\visual studio\cooker_api.entities\obj\Debug\net8.0\cooker_api.entities.dll
+C:\Users\Kezia123\Documents\aakodingan\visual studio\cooker_api.entities\obj\Debug\net8.0\refint\cooker_api.entities.dll
+C:\Users\Kezia123\Documents\aakodingan\visual studio\cooker_api.entities\obj\Debug\net8.0\cooker_api.entities.pdb
+C:\Users\Kezia123\Documents\aakodingan\visual studio\cooker_api.entities\obj\Debug\net8.0\ref\cooker_api.entities.dll
+C:\Users\Kezia123\Documents\aakodingan\visual studio\cooker_api.entities\bin\Debug\net8.0\cooker_api.entities.runtimeconfig.json
+C:\Users\Kezia123\Documents\aakodingan\visual studio\cooker_api.entities\obj\Debug\net8.0\cooker_api.entities.csproj.AssemblyReference.cache
+C:\Users\Kezia123\Documents\aakodingan\visual studio\cooker_api.entities\obj\Debug\net8.0\cooker_api.entities.genruntimeconfig.cache
