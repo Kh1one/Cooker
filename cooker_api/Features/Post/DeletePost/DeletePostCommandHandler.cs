@@ -18,6 +18,7 @@ namespace cooker_api.Features.Post.DeletePost
 
         public async Task<ResponseModel<PostModel>> Handle(DeletePostCommand requestId, CancellationToken cancellationToken)
         {
+            var favouritesRemoved = 0;
             var existingData = await _db.Posts
                 .Where(Q => Q.PostId == requestId.RequestId)
                 .FirstOrDefaultAsync();
@@ -36,6 +37,18 @@ namespace cooker_api.Features.Post.DeletePost
             }
             else
             {
+                var existingFavourites = await _db.Favourites
+                    .Where(Q => Q.PostId == existingData.PostId)
+                    .ToListAsync();
+
+                foreach( var fav in existingFavourites)
+                {
+                    _db.Favourites.Remove(fav);
+                    await _db.SaveChangesAsync();
+                    favouritesRemoved++;
+                }
+
+
                 _db.Posts.Remove(existingData);
                 await _db.SaveChangesAsync();
 
@@ -47,6 +60,7 @@ namespace cooker_api.Features.Post.DeletePost
                 if (userData != null)
                 {
                     userData.PostAmount--;
+                    userData.FavouriteAmount -= favouritesRemoved;
 
                     _db.Users.Update(userData);
                     await _db.SaveChangesAsync();

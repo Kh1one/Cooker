@@ -160,6 +160,29 @@
         }
       }
     },
+    "/api/v1/get-post-by-post-id/{PostId}": {
+      "get": {
+        "tags": [
+          "GetPostByPostId"
+        ],
+        "parameters": [
+          {
+            "name": "PostId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/v1/get-post-by-user-id/{UserId}": {
       "get": {
         "tags": [
@@ -520,6 +543,15 @@
             "type": "integer",
             "format": "int32"
           },
+          "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "profilePicture": {
+            "type": "string",
+            "format": "byte",
+            "nullable": true
+          },
           "postId": {
             "type": "integer",
             "format": "int32"
@@ -563,6 +595,15 @@
           "userId": {
             "type": "integer",
             "format": "int32"
+          },
+          "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "userProfilePicture": {
+            "type": "string",
+            "format": "byte",
+            "nullable": true
           },
           "description": {
             "type": "string",

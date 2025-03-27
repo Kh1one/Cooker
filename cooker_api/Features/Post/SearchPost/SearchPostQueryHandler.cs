@@ -24,17 +24,22 @@ namespace cooker_api.Features.Post.SearchPost
                 .OrderByDescending(Q => Q.FavouriteAmount)
                 .Skip((request.Page - 1) * request.PageSize)
                 .Take(request.PageSize)
-                .Select(Q => new PostModel
-                {
-                    PostId = Q.PostId,
-                    UserId = Q.UserId,
-                    Title = Q.Title,
-                    Description = Q.Description,
-                    Ingridients = Q.Ingridients,
-                    Instructions = Q.Instructions,
-                    FavouriteAmount = Q.FavouriteAmount,
-                    HeaderPicture = Q.HeaderPicture
-                })
+                .Join(_db.Users,
+                    p => p.UserId,
+                    u => u.UserId,
+                    (u, p) => new PostModel
+                    {
+                        PostId = u.PostId,
+                        UserId = u.UserId,
+                        Title = u.Title,
+                        Description = u.Description,
+                        Ingridients = u.Ingridients,
+                        Instructions = u.Instructions,
+                        FavouriteAmount = u.FavouriteAmount,
+                        HeaderPicture = u.HeaderPicture,
+                        UserProfilePicture = p.ProfilePicture,
+                        Username = p.Username,
+                    })
                 .ToListAsync();
 
 

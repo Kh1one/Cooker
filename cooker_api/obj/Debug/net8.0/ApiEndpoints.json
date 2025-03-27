@@ -101,6 +101,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "cooker_api.Controllers.GetPostByPostIdController",
+    "Method": "GetPostByPostId",
+    "RelativePath": "api/v1/get-post-by-post-id/{PostId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PostId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "cooker_api.Controllers.GetPostByUserIdController",
     "Method": "GetPostByUserId",
     "RelativePath": "api/v1/get-post-by-user-id/{UserId}",

@@ -11,12 +11,10 @@ namespace cooker_api.Features.Post.GetPostByUserId
 {
     public class GetPostByUserIdQueryhandler : IRequestHandler<GetPostByUserIdQuery, ResponseModel<List<PostModel>>>
     {
-        private readonly PostService _services;
         private readonly CookerContext _db;
 
-        public GetPostByUserIdQueryhandler(PostService services, CookerContext db)
+        public GetPostByUserIdQueryhandler(CookerContext db)
         {
-            _services = services;
             _db = db;
 
         }

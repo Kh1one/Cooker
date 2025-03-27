@@ -20,15 +20,21 @@ namespace cooker_api.Features.Comment.GetCommentByPostId
         {
             var postComments = await _db.Comments
                 .Where(Q => Q.PostId == request.PostId)
-                .Select(Q => new CommentModel
-                {
-                    CommentId = Q.CommentId,
-                    PostId = Q.PostId,
-                    UserId = Q.UserId,
-                    Content = Q.Content,
-                    LikeAmount = Q.LikeAmount,
-                    Edited = Q.Edited
-                })
+                .Join(_db.Users,
+                    c => c.UserId,
+                    u => u.UserId,
+                    (c, u) => new CommentModel
+                    {
+                        CommentId = c.CommentId,
+                        PostId = c.PostId,
+                        UserId = c.UserId,
+                        Username = u.Username,
+                        ProfilePicture = u.ProfilePicture,
+                        Content = c.Content,
+                        LikeAmount = c.LikeAmount,
+                        Edited = c.Edited
+                    })
+                .OrderByDescending(Q => Q.LikeAmount)
                 .ToListAsync();
 
             return new ResponseModel<List<CommentModel>>

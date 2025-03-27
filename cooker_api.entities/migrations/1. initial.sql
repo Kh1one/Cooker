@@ -24,7 +24,7 @@ CREATE TABLE Post (
     HeaderPicture VARBINARY(MAX),
     CreatedAt DATETIMEOFFSET NOT NULL DEFAULT SYSDATETIMEOFFSET(),
 
-    FOREIGN KEY (UserId) REFERENCES [User](UserId)
+    FOREIGN KEY (UserId) REFERENCES [User](UserId) on delete cascade
 );
 
 CREATE TABLE Comment (
@@ -37,7 +37,7 @@ CREATE TABLE Comment (
     CreatedAt DATETIMEOFFSET NOT NULL DEFAULT SYSDATETIMEOFFSET(),
 
     FOREIGN KEY (UserId) REFERENCES [User](UserId),
-    FOREIGN KEY (PostId) REFERENCES Post(PostId)
+    FOREIGN KEY (PostId) REFERENCES Post(PostId) on delete cascade
 );
 
 CREATE TABLE Favourite (

@@ -27,14 +27,15 @@ public partial class CookerContext : DbContext
     {
         if (optionsBuilder.IsConfigured == false)
         {
-            optionsBuilder.UseSqlServer("Data Source=.\\SQLEXPRESS;initial catalog=cooker;trusted_connection=true;TrustServerCertificate=True");
+            optionsBuilder.UseSqlServer("data source=LAPTOP-LIA7VBA9\\SQLEXPRESS;initial catalog=Cooker;trusted_connection=true;TrustServerCertificate=True");
         }
     }
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Comment>(entity =>
         {
-            entity.HasKey(e => e.CommentId).HasName("PK__Comment__C3B4DFCA00B84C37");
+            entity.HasKey(e => e.CommentId).HasName("PK__Comment__C3B4DFCA8CDD6B44");
 
             entity.ToTable("Comment");
 
@@ -45,7 +46,6 @@ public partial class CookerContext : DbContext
 
             entity.HasOne(d => d.Post).WithMany(p => p.Comments)
                 .HasForeignKey(d => d.PostId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__Comment__PostId__4316F928");
 
             entity.HasOne(d => d.User).WithMany(p => p.Comments)
@@ -56,7 +56,7 @@ public partial class CookerContext : DbContext
 
         modelBuilder.Entity<Favourite>(entity =>
         {
-            entity.HasKey(e => e.FavouriteId).HasName("PK__Favourit__5944B59AAAD4007E");
+            entity.HasKey(e => e.FavouriteId).HasName("PK__Favourit__5944B59A3AA9D451");
 
             entity.ToTable("Favourite");
 
@@ -73,7 +73,7 @@ public partial class CookerContext : DbContext
 
         modelBuilder.Entity<Post>(entity =>
         {
-            entity.HasKey(e => e.PostId).HasName("PK__Post__AA1260184BA34192");
+            entity.HasKey(e => e.PostId).HasName("PK__Post__AA126018036BAC6E");
 
             entity.ToTable("Post");
 
@@ -93,13 +93,12 @@ public partial class CookerContext : DbContext
 
             entity.HasOne(d => d.User).WithMany(p => p.Posts)
                 .HasForeignKey(d => d.UserId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__Post__UserId__3D5E1FD2");
         });
 
         modelBuilder.Entity<User>(entity =>
         {
-            entity.HasKey(e => e.UserId).HasName("PK__User__1788CC4C595C25F7");
+            entity.HasKey(e => e.UserId).HasName("PK__User__1788CC4CB9AA8046");
 
             entity.ToTable("User");
 

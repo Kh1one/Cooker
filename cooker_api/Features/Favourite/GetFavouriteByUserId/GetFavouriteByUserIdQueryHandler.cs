@@ -22,22 +22,29 @@ namespace cooker_api.Features.Favourite.GetFavouriteByUserId
         public async Task<ResponseModel<List<PostModel>>> Handle(GetFavouriteByUserIdQuery request, CancellationToken cancellationToken)
         {
             var favouritePosts = await _db.Favourites
-                .Where(Q => Q.UserId == request.UserId)
-                .Join(_db.Posts,
-                    fav => fav.PostId,
-                    post => post.PostId,
-                    (fav, post) => new PostModel
-                    {
-                        PostId = post.PostId,
-                        UserId = post.UserId,
-                        Description = post.Description,
-                        Ingridients = post.Ingridients,
-                        Title = post.Title,
-                        Instructions = post.Instructions,
-                        FavouriteAmount = post.FavouriteAmount,
-                        HeaderPicture = post.HeaderPicture
-                    })
-                .ToListAsync();
+             .Where(fav => fav.UserId == request.UserId)
+             .Join(_db.Posts,
+                 fav => fav.PostId,
+                 post => post.PostId,
+                 (fav, post) => new { fav, post }) // Anonymous type to hold intermediate results
+             .Join(_db.Users,
+                 combined => combined.post.UserId, // Join on UserId from Post
+                 user => user.UserId,
+                 (combined, user) => new PostModel
+                 {
+                     PostId = combined.post.PostId,
+                     UserId = combined.post.UserId,
+                     Description = combined.post.Description,
+                     Ingridients = combined.post.Ingridients,
+                     Title = combined.post.Title,
+                     Instructions = combined.post.Instructions,
+                     FavouriteAmount = combined.post.FavouriteAmount,
+                     HeaderPicture = combined.post.HeaderPicture,
+                     Username = user.Username, 
+                     UserProfilePicture = user.ProfilePicture 
+                 })
+             .ToListAsync();
+
 
             return new ResponseModel<List<PostModel>>
             {

@@ -6,6 +6,9 @@
 
         public int UserId { get; set; }
 
+        public string? Username { get; set; } = string.Empty;
+        public byte[]? ProfilePicture { get; set; }
+
         public int PostId { get; set; }
 
         public string Content { get; set; } = string.Empty;

@@ -7,6 +7,9 @@ namespace cooker_api.Models
         public int? PostId { get; set; }
 
         public int UserId { get; set; }
+        public string Username { get; set; } = string.Empty;
+        public byte[]? UserProfilePicture { get; set; }
+
 
         public string Description { get; set; } = string.Empty;
 

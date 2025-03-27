@@ -1729,3 +1729,55 @@ OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
 2025-03-19 14:51:03.362 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.8567ms
 2025-03-19 14:51:03.534 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/swagger/v1/swagger.json - null null
 2025-03-19 14:51:03.552 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.1104ms
+2025-03-19 17:41:37.073 +07:00 [INF] Now listening on: http://localhost:5056
+2025-03-19 17:41:37.272 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-19 17:41:37.274 +07:00 [INF] Hosting environment: Development
+2025-03-19 17:41:37.276 +07:00 [INF] Content root path: C:\Users\Kezia123\Documents\aakodingan\visual studio\cooker_api
+2025-03-19 17:41:37.524 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/swagger/index.html - null null
+2025-03-19 17:41:37.792 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/swagger/index.html - 200 null text/html;charset=utf-8 277.7545ms
+2025-03-19 17:41:37.820 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-19 17:41:37.820 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/_vs/browserLink - null null
+2025-03-19 17:41:37.825 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 7.7385ms
+2025-03-19 17:41:37.873 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 52.3822ms
+2025-03-19 17:41:37.956 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/swagger/v1/swagger.json - null null
+2025-03-19 17:41:37.977 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.8299ms
+2025-03-19 17:41:41.796 +07:00 [INF] Now listening on: http://localhost:5056
+2025-03-19 17:41:41.874 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-19 17:41:41.878 +07:00 [INF] Hosting environment: Development
+2025-03-19 17:41:41.880 +07:00 [INF] Content root path: C:\Users\Kezia123\Documents\aakodingan\visual studio\cooker_api
+2025-03-19 17:41:42.085 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/swagger/index.html - null null
+2025-03-19 17:41:42.192 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/swagger/index.html - 200 null text/html;charset=utf-8 108.1356ms
+2025-03-19 17:41:42.242 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-19 17:41:42.242 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/_vs/browserLink - null null
+2025-03-19 17:41:42.247 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 4.7921ms
+2025-03-19 17:41:42.264 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.8434ms
+2025-03-19 17:41:42.308 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/swagger/v1/swagger.json - null null
+2025-03-19 17:41:42.316 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.5894ms
+2025-03-19 17:56:41.482 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/swagger/index.html - null null
+2025-03-19 17:56:41.503 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/swagger/index.html - 200 null text/html;charset=utf-8 21.0393ms
+2025-03-19 17:56:41.548 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-19 17:56:41.548 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/_vs/browserLink - null null
+2025-03-19 17:56:41.555 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 7.0084ms
+2025-03-19 17:56:41.565 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.2395ms
+2025-03-19 17:56:41.925 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/swagger/v1/swagger.json - null null
+2025-03-19 17:56:41.948 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 22.2764ms
+2025-03-19 17:57:38.710 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/api/v1/get-all-posts/{1}/{2} - null null
+2025-03-19 17:57:38.728 +07:00 [INF] Executing endpoint 'cooker_api.Controllers.GetAllPostsController.GetAllPosts (cooker_api)'
+2025-03-19 17:57:38.786 +07:00 [INF] Route matched with {action = "GetAllPosts", controller = "GetAllPosts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPosts(Int32, Int32) on controller cooker_api.Controllers.GetAllPostsController (cooker_api).
+2025-03-19 17:57:38.814 +07:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-03-19 17:57:38.856 +07:00 [INF] Executed action cooker_api.Controllers.GetAllPostsController.GetAllPosts (cooker_api) in 63.9524ms
+2025-03-19 17:57:38.860 +07:00 [INF] Executed endpoint 'cooker_api.Controllers.GetAllPostsController.GetAllPosts (cooker_api)'
+2025-03-19 17:57:38.862 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/api/v1/get-all-posts/{1}/{2} - 400 null application/problem+json; charset=utf-8 151.2375ms
+2025-03-19 17:57:48.747 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/api/v1/get-all-posts/1/2 - null null
+2025-03-19 17:57:48.756 +07:00 [INF] Executing endpoint 'cooker_api.Controllers.GetAllPostsController.GetAllPosts (cooker_api)'
+2025-03-19 17:57:48.759 +07:00 [INF] Route matched with {action = "GetAllPosts", controller = "GetAllPosts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPosts(Int32, Int32) on controller cooker_api.Controllers.GetAllPostsController (cooker_api).
+2025-03-19 17:57:48.871 +07:00 [WRN] 'AddEntityFramework*' was called on the service provider, but 'UseInternalServiceProvider' wasn't called in the DbContext options configuration. Consider removing the 'AddEntityFramework*' call, as in most cases it's not needed and may cause conflicts with other products and services registered in the same service provider.
+2025-03-19 17:57:50.543 +07:00 [INF] Executed DbCommand (57ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PostId], [p].[UserId], [p].[Title], [p].[Description], [p].[Ingridients], [p].[Instructions], [p].[FavouriteAmount], [p].[HeaderPicture]
+FROM [Post] AS [p]
+ORDER BY [p].[FavouriteAmount] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-03-19 17:57:50.586 +07:00 [INF] Executing OkObjectResult, writing value of type 'cooker_api.Models.ResponseModel`1[[System.Collections.Generic.List`1[[cooker_api.Models.PostModel, cooker_api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-19 17:57:50.596 +07:00 [INF] Executed action cooker_api.Controllers.GetAllPostsController.GetAllPosts (cooker_api) in 1834.3774ms
+2025-03-19 17:57:50.598 +07:00 [INF] Executed endpoint 'cooker_api.Controllers.GetAllPostsController.GetAllPosts (cooker_api)'
+2025-03-19 17:57:50.609 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/api/v1/get-all-posts/1/2 - 200 null application/json; charset=utf-8 1861.9437ms
